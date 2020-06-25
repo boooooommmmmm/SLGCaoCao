@@ -4,24 +4,28 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 
-public class SeparateAnimationFromFBX : Editor
+public class SeparateAnimationFromFBX
 {
-    [MenuItem("AnimationClip/GetFilteredtoAnim &1", true)]
+    [MenuItem("GameObject/Tools/SeparateAnimations &1")]
     static void CreateAnim()
     {
-        string targetPath = Application.dataPath + "/AnimationClip";
-        if (!Directory.Exists(targetPath))
+        Object[] selectionAsset = Selection.GetFiltered(typeof(Object), SelectionMode.Unfiltered);            
+        
+        foreach (Object asset in selectionAsset)
         {
-            Directory.CreateDirectory(targetPath);
-        }
-        Object[] SelectionAsset = Selection.GetFiltered(typeof(Object), SelectionMode.Unfiltered);
-        Debug.Log(SelectionAsset.Length);
-        foreach (Object Asset in SelectionAsset)
-        {
+            string assetName = selectionAsset[0].name;
+            string targetPath = Application.dataPath + "Art/Animations/" + assetName;
+            if (!Directory.Exists(targetPath))
+            {
+                Directory.CreateDirectory(targetPath);
+            }
+
             AnimationClip newClip = new AnimationClip();
-            EditorUtility.CopySerialized(Asset, newClip);
-            AssetDatabase.CreateAsset(newClip, "Assets/AnimationClip/" + Asset.name + ".anim");
+            EditorUtility.CopySerialized(asset, newClip);
+            AssetDatabase.CreateAsset(newClip, targetPath + "/" + asset.name + ".anim");
+
+            Debug.Log(string.Format("Generate animations success! {0}", assetName));
         }
-        AssetDatabase.Refresh();
+        AssetDatabase.Refresh();        
     }
 }
