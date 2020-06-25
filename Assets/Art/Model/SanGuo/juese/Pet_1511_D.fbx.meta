@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 4c41a303f9a810a4e967ca1340350acf
+timeCreated: 1540289931
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: body_0
+    100004: Boot
+    100006: Head
+    100008: L_Calf
+    100010: L_Clavicle
+    100012: L_Foot
+    100014: L_Forearm
+    100016: L_Hand
+    100018: L_HorseLink
+    100020: L_Thigh
+    100022: L_UpperArm
+    100024: Neck
+    100026: Pelvis
+    100028: //RootNode
+    100030: Pet_1511_D
+    100032: PM_Monster_Vulpix
+    100034: PM_Monster_Vulpix_0
+    100036: PM_Monster_Vulpix_02
+    100038: PM_Monster_Vulpix_02_0
+    100040: PM_Monster_Vulpix_Eye
+    100042: PM_Monster_Vulpix_Eye_0
+    100044: R_Calf
+    100046: R_Clavicle
+    100048: R_Foot
+    100050: R_Forearm
+    100052: R_Hand
+    100054: R_HorseLink
+    100056: R_Thigh
+    100058: R_UpperArm
+    100060: Spine
+    100062: Spine1
+    100064: Spine2
+    100066: Weiba01_01
+    100068: Weiba01_02
+    100070: Weiba01_03
+    100072: Weiba01_04
+    100074: Weiba02_01
+    100076: Weiba02_02
+    100078: Weiba02_03
+    100080: Weiba02_04
+    100082: Weiba03_01
+    100084: Weiba03_02
+    100086: Weiba03_03
+    100088: Weiba03_04
+    100090: Weiba04_01
+    100092: Weiba04_02
+    100094: Weiba04_03
+    100096: Weiba04_04
+    100098: Weiba05_01
+    100100: Weiba05_02
+    100102: Weiba05_03
+    100104: Weiba05_04
+    100106: Weiba06_01
+    100108: Weiba06_02
+    100110: Weiba06_03
+    100112: Weiba06_04
+    400000: body
+    400002: body_0
+    400004: Boot
+    400006: Head
+    400008: L_Calf
+    400010: L_Clavicle
+    400012: L_Foot
+    400014: L_Forearm
+    400016: L_Hand
+    400018: L_HorseLink
+    400020: L_Thigh
+    400022: L_UpperArm
+    400024: Neck
+    400026: Pelvis
+    400028: //RootNode
+    400030: Pet_1511_D
+    400032: PM_Monster_Vulpix
+    400034: PM_Monster_Vulpix_0
+    400036: PM_Monster_Vulpix_02
+    400038: PM_Monster_Vulpix_02_0
+    400040: PM_Monster_Vulpix_Eye
+    400042: PM_Monster_Vulpix_Eye_0
+    400044: R_Calf
+    400046: R_Clavicle
+    400048: R_Foot
+    400050: R_Forearm
+    400052: R_Hand
+    400054: R_HorseLink
+    400056: R_Thigh
+    400058: R_UpperArm
+    400060: Spine
+    400062: Spine1
+    400064: Spine2
+    400066: Weiba01_01
+    400068: Weiba01_02
+    400070: Weiba01_03
+    400072: Weiba01_04
+    400074: Weiba02_01
+    400076: Weiba02_02
+    400078: Weiba02_03
+    400080: Weiba02_04
+    400082: Weiba03_01
+    400084: Weiba03_02
+    400086: Weiba03_03
+    400088: Weiba03_04
+    400090: Weiba04_01
+    400092: Weiba04_02
+    400094: Weiba04_03
+    400096: Weiba04_04
+    400098: Weiba05_01
+    400100: Weiba05_02
+    400102: Weiba05_03
+    400104: Weiba05_04
+    400106: Weiba06_01
+    400108: Weiba06_02
+    400110: Weiba06_03
+    400112: Weiba06_04
+    4300000: PM_Monster_Vulpix_0
+    4300002: PM_Monster_Vulpix_02_0
+    4300004: PM_Monster_Vulpix_Eye_0
+    4300006: body_0
+    7400000: idle
+    7400002: move
+    7400004: buffact
+    9500000: //RootNode
+    13700000: body_0
+    13700002: PM_Monster_Vulpix_0
+    13700004: PM_Monster_Vulpix_02_0
+    13700006: PM_Monster_Vulpix_Eye_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

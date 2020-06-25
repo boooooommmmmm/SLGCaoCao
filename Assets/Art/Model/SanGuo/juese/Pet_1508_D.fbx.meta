@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 0438ebb9fc730334aa3e35133d0f160c
+timeCreated: 1540289891
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: body_0
+    100004: Boot
+    100006: Head
+    100008: L_Calf
+    100010: L_Er01
+    100012: L_Er02
+    100014: L_Finger0
+    100016: L_Foot
+    100018: L_Forearm
+    100020: L_Hand
+    100022: L_HorseLink
+    100024: L_Shldr
+    100026: L_Thigh
+    100028: L_Toe
+    100030: L_Upperarm
+    100032: Mao01
+    100034: Mao02
+    100036: Mao03
+    100038: Mao04
+    100040: Mao05
+    100042: Neck
+    100044: Pelvis
+    100046: //RootNode
+    100048: Pet_1508_D
+    100050: PM_Monster_Poochyena
+    100052: PM_Monster_Poochyena_0
+    100054: R_Calf
+    100056: R_Er01
+    100058: R_Er02
+    100060: R_Finger0
+    100062: R_Foot
+    100064: R_Forearm
+    100066: R_Hand
+    100068: R_HorseLink
+    100070: R_Shldr
+    100072: R_Thigh
+    100074: R_Toe
+    100076: R_Upperarm
+    100078: Spine
+    100080: Spine01
+    100082: Wei01
+    100084: Wei02
+    100086: Wei03
+    100088: Wei04
+    100090: Zui01
+    400000: body
+    400002: body_0
+    400004: Boot
+    400006: Head
+    400008: L_Calf
+    400010: L_Er01
+    400012: L_Er02
+    400014: L_Finger0
+    400016: L_Foot
+    400018: L_Forearm
+    400020: L_Hand
+    400022: L_HorseLink
+    400024: L_Shldr
+    400026: L_Thigh
+    400028: L_Toe
+    400030: L_Upperarm
+    400032: Mao01
+    400034: Mao02
+    400036: Mao03
+    400038: Mao04
+    400040: Mao05
+    400042: Neck
+    400044: Pelvis
+    400046: //RootNode
+    400048: Pet_1508_D
+    400050: PM_Monster_Poochyena
+    400052: PM_Monster_Poochyena_0
+    400054: R_Calf
+    400056: R_Er01
+    400058: R_Er02
+    400060: R_Finger0
+    400062: R_Foot
+    400064: R_Forearm
+    400066: R_Hand
+    400068: R_HorseLink
+    400070: R_Shldr
+    400072: R_Thigh
+    400074: R_Toe
+    400076: R_Upperarm
+    400078: Spine
+    400080: Spine01
+    400082: Wei01
+    400084: Wei02
+    400086: Wei03
+    400088: Wei04
+    400090: Zui01
+    4300000: PM_Monster_Poochyena_0
+    4300002: body_0
+    7400000: idle
+    7400002: move
+    7400004: buffact
+    9500000: //RootNode
+    13700000: body_0
+    13700002: PM_Monster_Poochyena_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

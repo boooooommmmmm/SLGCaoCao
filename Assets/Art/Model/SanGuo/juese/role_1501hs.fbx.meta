@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 094f8cc005785c945ae57e6f75d6552a
+timeCreated: 1540289894
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: body_0
+    100004: Boot
+    100006: Head
+    100008: L Calf
+    100010: L Clavicle
+    100012: L Foot
+    100014: L Forearm
+    100016: L Hand
+    100018: L HorseLink
+    100020: L Thigh
+    100022: L Toe0
+    100024: L UpperArm
+    100026: Mao01
+    100028: Mao010
+    100030: Mao011
+    100032: Mao012
+    100034: Mao02
+    100036: Mao03
+    100038: Mao04
+    100040: Mao05
+    100042: Mao06
+    100044: Mao07
+    100046: Mao08
+    100048: Mao09
+    100050: Neck
+    100052: Pelvis
+    100054: PM_Monster_Arcanine
+    100056: PM_Monster_Arcanine_0
+    100058: R Calf
+    100060: R Clavicle
+    100062: R Foot
+    100064: R Forearm
+    100066: R Hand
+    100068: R HorseLink
+    100070: R Thigh
+    100072: R Toe0
+    100074: R UpperArm
+    100076: //RootNode
+    100078: role_1501hs
+    100080: Spine
+    100082: Spine1
+    100084: Spine2
+    100086: Weiba_01
+    100088: Weiba_02
+    100090: Weiba_03
+    100092: Weiba_04
+    100094: Weiba_05
+    100096: Zuiba_01
+    400000: body
+    400002: body_0
+    400004: Boot
+    400006: Head
+    400008: L Calf
+    400010: L Clavicle
+    400012: L Foot
+    400014: L Forearm
+    400016: L Hand
+    400018: L HorseLink
+    400020: L Thigh
+    400022: L Toe0
+    400024: L UpperArm
+    400026: Mao01
+    400028: Mao010
+    400030: Mao011
+    400032: Mao012
+    400034: Mao02
+    400036: Mao03
+    400038: Mao04
+    400040: Mao05
+    400042: Mao06
+    400044: Mao07
+    400046: Mao08
+    400048: Mao09
+    400050: Neck
+    400052: Pelvis
+    400054: PM_Monster_Arcanine
+    400056: PM_Monster_Arcanine_0
+    400058: R Calf
+    400060: R Clavicle
+    400062: R Foot
+    400064: R Forearm
+    400066: R Hand
+    400068: R HorseLink
+    400070: R Thigh
+    400072: R Toe0
+    400074: R UpperArm
+    400076: //RootNode
+    400078: role_1501hs
+    400080: Spine
+    400082: Spine1
+    400084: Spine2
+    400086: Weiba_01
+    400088: Weiba_02
+    400090: Weiba_03
+    400092: Weiba_04
+    400094: Weiba_05
+    400096: Zuiba_01
+    4300000: PM_Monster_Arcanine_0
+    4300002: body_0
+    7400000: mounts_idle
+    7400002: mounts_move
+    7400004: buffact
+    9500000: //RootNode
+    13700000: body_0
+    13700002: PM_Monster_Arcanine_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: dc78dfb1d25f60f43aa6c77b225fde44
+timeCreated: 1540290003
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001 Head
+    100002: Bip01
+    100004: Bip01 Head_
+    100006: Bip01 HeadNub
+    100008: Bip01 L Calf
+    100010: Bip01 L Clavicle
+    100012: Bip01 L Finger0
+    100014: Bip01 L Finger1
+    100016: Bip01 L Finger2
+    100018: Bip01 L Finger3
+    100020: Bip01 L Foot
+    100022: Bip01 L Forearm
+    100024: Bip01 L Hand
+    100026: Bip01 L Thigh
+    100028: Bip01 L Toe0
+    100030: Bip01 L Toe0Nub
+    100032: Bip01 L Toe1
+    100034: Bip01 L Toe1Nub
+    100036: Bip01 L Toe2
+    100038: Bip01 L Toe2Nub
+    100040: Bip01 L Toe3
+    100042: Bip01 L Toe3Nub
+    100044: Bip01 L UpperArm
+    100046: Bip01 Neck
+    100048: Bip01 Pelvis
+    100050: Bip01 Ponytail1
+    100052: Bip01 Ponytail1Nub
+    100054: Bip01 R Calf
+    100056: Bip01 R Clavicle
+    100058: Bip01 R Finger0
+    100060: Bip01 R Finger1
+    100062: Bip01 R Finger2
+    100064: Bip01 R Finger3
+    100066: Bip01 R Foot
+    100068: Bip01 R Forearm
+    100070: Bip01 R Hand
+    100072: Bip01 R Thigh
+    100074: Bip01 R Toe0
+    100076: Bip01 R Toe0Nub
+    100078: Bip01 R Toe1
+    100080: Bip01 R Toe1Nub
+    100082: Bip01 R Toe2
+    100084: Bip01 R Toe2Nub
+    100086: Bip01 R Toe3
+    100088: Bip01 R Toe3Nub
+    100090: Bip01 R UpperArm
+    100092: Bip01 Spine
+    100094: Bip01 Spine1
+    100096: Bip01 Xtra01
+    100098: Bip01 Xtra0102
+    100100: Bip01 Xtra0103
+    100102: Bip01 Xtra0104
+    100104: Bip01 Xtra0105
+    100106: body
+    100108: body_0
+    100110: Bone001(mirrored)
+    100112: Bone001(mirrored)(mirrored)
+    100114: Bone002(mirrored)
+    100116: Bone002(mirrored)(mirrored)
+    100118: Bone003(mirrored)
+    100120: Bone003(mirrored)(mirrored)
+    100122: Bone005
+    100124: Bone005(mirrored)
+    100126: Bone005(mirrored) 1
+    100128: Bone006
+    100130: Bone006(mirrored)
+    100132: Bone007
+    100134: Bone007(mirrored)
+    100136: Bone008
+    100138: Bone008(mirrored)
+    100140: role_n5904
+    100142: //RootNode
+    100144: role_n5904 1
+    400000: Bip001 Head
+    400002: Bip01
+    400004: Bip01 Head_
+    400006: Bip01 HeadNub
+    400008: Bip01 L Calf
+    400010: Bip01 L Clavicle
+    400012: Bip01 L Finger0
+    400014: Bip01 L Finger1
+    400016: Bip01 L Finger2
+    400018: Bip01 L Finger3
+    400020: Bip01 L Foot
+    400022: Bip01 L Forearm
+    400024: Bip01 L Hand
+    400026: Bip01 L Thigh
+    400028: Bip01 L Toe0
+    400030: Bip01 L Toe0Nub
+    400032: Bip01 L Toe1
+    400034: Bip01 L Toe1Nub
+    400036: Bip01 L Toe2
+    400038: Bip01 L Toe2Nub
+    400040: Bip01 L Toe3
+    400042: Bip01 L Toe3Nub
+    400044: Bip01 L UpperArm
+    400046: Bip01 Neck
+    400048: Bip01 Pelvis
+    400050: Bip01 Ponytail1
+    400052: Bip01 Ponytail1Nub
+    400054: Bip01 R Calf
+    400056: Bip01 R Clavicle
+    400058: Bip01 R Finger0
+    400060: Bip01 R Finger1
+    400062: Bip01 R Finger2
+    400064: Bip01 R Finger3
+    400066: Bip01 R Foot
+    400068: Bip01 R Forearm
+    400070: Bip01 R Hand
+    400072: Bip01 R Thigh
+    400074: Bip01 R Toe0
+    400076: Bip01 R Toe0Nub
+    400078: Bip01 R Toe1
+    400080: Bip01 R Toe1Nub
+    400082: Bip01 R Toe2
+    400084: Bip01 R Toe2Nub
+    400086: Bip01 R Toe3
+    400088: Bip01 R Toe3Nub
+    400090: Bip01 R UpperArm
+    400092: Bip01 Spine
+    400094: Bip01 Spine1
+    400096: Bip01 Xtra01
+    400098: Bip01 Xtra0102
+    400100: Bip01 Xtra0103
+    400102: Bip01 Xtra0104
+    400104: Bip01 Xtra0105
+    400106: body
+    400108: body_0
+    400110: Bone001(mirrored)
+    400112: Bone001(mirrored)(mirrored)
+    400114: Bone002(mirrored)
+    400116: Bone002(mirrored)(mirrored)
+    400118: Bone003(mirrored)
+    400120: Bone003(mirrored)(mirrored)
+    400122: Bone005
+    400124: Bone005(mirrored)
+    400126: Bone005(mirrored) 1
+    400128: Bone006
+    400130: Bone006(mirrored)
+    400132: Bone007
+    400134: Bone007(mirrored)
+    400136: Bone008
+    400138: Bone008(mirrored)
+    400140: role_n5904
+    400142: //RootNode
+    400144: role_n5904 1
+    4300000: body_0
+    7400000: attack
+    7400002: stand
+    7400004: victory
+    7400006: skill_l
+    7400008: fight_death
+    7400010: fight_be_hit_0
+    9500000: //RootNode
+    13700000: body_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

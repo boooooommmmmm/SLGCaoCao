@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 9c4a50918efcf694ab916bb7c59b3c7a
+timeCreated: 1540289975
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: body_0
+    100004: Boot
+    100006: Fair1
+    100008: Fair2
+    100010: Head
+    100012: L_Calf
+    100014: L_Clavicle
+    100016: L_Finger1
+    100018: L_Finger2
+    100020: L_Foot
+    100022: L_Forearm
+    100024: L_Hand
+    100026: L_Thigh
+    100028: L_Toe1
+    100030: L_Toe2
+    100032: L_Toe3
+    100034: L_Toe4
+    100036: L_Toe5
+    100038: L_Toe6
+    100040: L_Toe7
+    100042: L_Toe8
+    100044: L_UpperArm
+    100046: Mouth
+    100048: Neck
+    100050: Pelvis
+    100052: //RootNode
+    100054: Pet_1510_U
+    100056: PM_Monster_Swellow
+    100058: PM_Monster_Swellow_0
+    100060: R_Calf
+    100062: R_Clavicle
+    100064: R_Finger1
+    100066: R_Finger2
+    100068: R_Foot
+    100070: R_Forearm
+    100072: R_Hand
+    100074: R_Thigh
+    100076: R_Toe1
+    100078: R_Toe2
+    100080: R_Toe3
+    100082: R_Toe4
+    100084: R_Toe5
+    100086: R_Toe6
+    100088: R_Toe7
+    100090: R_Toe8
+    100092: R_UpperArm
+    100094: Spine
+    100096: Spine1
+    100098: Tail1
+    100100: Tail2
+    100102: Tail3
+    100104: Tail4
+    100106: Tail5
+    100108: Tail6
+    400000: body
+    400002: body_0
+    400004: Boot
+    400006: Fair1
+    400008: Fair2
+    400010: Head
+    400012: L_Calf
+    400014: L_Clavicle
+    400016: L_Finger1
+    400018: L_Finger2
+    400020: L_Foot
+    400022: L_Forearm
+    400024: L_Hand
+    400026: L_Thigh
+    400028: L_Toe1
+    400030: L_Toe2
+    400032: L_Toe3
+    400034: L_Toe4
+    400036: L_Toe5
+    400038: L_Toe6
+    400040: L_Toe7
+    400042: L_Toe8
+    400044: L_UpperArm
+    400046: Mouth
+    400048: Neck
+    400050: Pelvis
+    400052: //RootNode
+    400054: Pet_1510_U
+    400056: PM_Monster_Swellow
+    400058: PM_Monster_Swellow_0
+    400060: R_Calf
+    400062: R_Clavicle
+    400064: R_Finger1
+    400066: R_Finger2
+    400068: R_Foot
+    400070: R_Forearm
+    400072: R_Hand
+    400074: R_Thigh
+    400076: R_Toe1
+    400078: R_Toe2
+    400080: R_Toe3
+    400082: R_Toe4
+    400084: R_Toe5
+    400086: R_Toe6
+    400088: R_Toe7
+    400090: R_Toe8
+    400092: R_UpperArm
+    400094: Spine
+    400096: Spine1
+    400098: Tail1
+    400100: Tail2
+    400102: Tail3
+    400104: Tail4
+    400106: Tail5
+    400108: Tail6
+    4300000: PM_Monster_Swellow_0
+    4300002: body_0
+    7400000: idle
+    7400002: move
+    7400004: buffact
+    9500000: //RootNode
+    13700000: body_0
+    13700002: PM_Monster_Swellow_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

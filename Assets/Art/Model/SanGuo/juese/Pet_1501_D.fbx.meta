@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 616f85ae9a431d3498ae1cfc76918903
+timeCreated: 1540289941
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: body 1
+    100004: body_0
+    100006: body_0 1
+    100008: Boot
+    100010: Head
+    100012: L Calf
+    100014: L Clavicle
+    100016: L Foot
+    100018: L Forearm
+    100020: L Hand
+    100022: L HorseLink
+    100024: L Thigh
+    100026: L Toe0
+    100028: L UpperArm
+    100030: Mao01
+    100032: Mao010
+    100034: Mao011
+    100036: Mao012
+    100038: Mao02
+    100040: Mao03
+    100042: Mao04
+    100044: Mao05
+    100046: Mao06
+    100048: Mao07
+    100050: Mao08
+    100052: Mao09
+    100054: Neck
+    100056: Pelvis
+    100058: Pet_1501_D
+    100060: //RootNode
+    100062: R Calf
+    100064: R Clavicle
+    100066: R Foot
+    100068: R Forearm
+    100070: R Hand
+    100072: R HorseLink
+    100074: R Thigh
+    100076: R Toe0
+    100078: R UpperArm
+    100080: Spine
+    100082: Spine1
+    100084: Spine2
+    100086: Weiba_01
+    100088: Weiba_02
+    100090: Weiba_03
+    100092: Weiba_04
+    100094: Weiba_05
+    100096: Zuiba_01
+    400000: body
+    400002: body 1
+    400004: body_0
+    400006: body_0 1
+    400008: Boot
+    400010: Head
+    400012: L Calf
+    400014: L Clavicle
+    400016: L Foot
+    400018: L Forearm
+    400020: L Hand
+    400022: L HorseLink
+    400024: L Thigh
+    400026: L Toe0
+    400028: L UpperArm
+    400030: Mao01
+    400032: Mao010
+    400034: Mao011
+    400036: Mao012
+    400038: Mao02
+    400040: Mao03
+    400042: Mao04
+    400044: Mao05
+    400046: Mao06
+    400048: Mao07
+    400050: Mao08
+    400052: Mao09
+    400054: Neck
+    400056: Pelvis
+    400058: //RootNode
+    400060: Pet_1501_D
+    400062: R Calf
+    400064: R Clavicle
+    400066: R Foot
+    400068: R Forearm
+    400070: R Hand
+    400072: R HorseLink
+    400074: R Thigh
+    400076: R Toe0
+    400078: R UpperArm
+    400080: Spine
+    400082: Spine1
+    400084: Spine2
+    400086: Weiba_01
+    400088: Weiba_02
+    400090: Weiba_03
+    400092: Weiba_04
+    400094: Weiba_05
+    400096: Zuiba_01
+    4300000: body_0
+    4300002: body_0
+    7400000: mounts_idle
+    7400002: mounts_move
+    7400004: buffact
+    9500000: //RootNode
+    13700000: body_0
+    13700002: body_0 1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

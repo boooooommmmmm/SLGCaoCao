@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 5a4c6cc68791bbf44bba595b98bc0d8f
+timeCreated: 1540289939
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Neck
+    100004: Bip001 Pelvis
+    100006: Bip001 R Clavicle
+    100008: Bip001 R Forearm
+    100010: Bip001 R Hand
+    100012: Bip001 R UpperArm
+    100014: Bip001 Spine
+    100016: Bip001 Spine1
+    100018: Bone01
+    100020: Bone01 1
+    100022: Bone01 2
+    100024: Bone02
+    100026: Bone02 1
+    100028: Bone02 2
+    100030: Bone03
+    100032: Bone03 1
+    100034: Bone04
+    100036: Bone04 1
+    100038: Bone04 2
+    100040: Bone05
+    100042: Bone06
+    100044: Bone06 1
+    100046: Bone07
+    100048: Bone08
+    100050: Bone08 1
+    100052: Bone08 2
+    100054: Bone09
+    100056: Bone10
+    100058: Bone10 1
+    100060: Bone10 2
+    100062: Bone11
+    100064: Bone11 1
+    100066: Bone12
+    100068: Bone12 1
+    100070: Bone12 2
+    100072: Bone13
+    100074: Bone13 1
+    100076: Bone14
+    100078: Bone15
+    100080: E_role_1001_wp01
+    100082: E_role_1001_wp01 1
+    100084: E_role_1001_wp01 2
+    100086: E_role_1001_wp01_0
+    100088: E_role_1001_wp01_0 1
+    100090: E_role_1001_wp01_0 2
+    100092: Object010
+    100094: Object010_0
+    100096: Object07
+    100098: Object07_0
+    100100: Object09
+    100102: Object09_0
+    100104: Plane001
+    100106: Plane001 1
+    100108: Plane001_0
+    100110: Plane001_0 1
+    100112: role_1011
+    100114: //RootNode
+    100116: weapon1
+    100118: weapon2
+    100120: weapon3
+    100122: wing1
+    100124: wing1_0
+    100126: wing2
+    100128: wing3
+    100130: wing4
+    400000: Bip001
+    400002: Bip001 Neck
+    400004: Bip001 Pelvis
+    400006: Bip001 R Clavicle
+    400008: Bip001 R Forearm
+    400010: Bip001 R Hand
+    400012: Bip001 R UpperArm
+    400014: Bip001 Spine
+    400016: Bip001 Spine1
+    400018: Bone01
+    400020: Bone01 1
+    400022: Bone01 2
+    400024: Bone02
+    400026: Bone02 1
+    400028: Bone02 2
+    400030: Bone03
+    400032: Bone03 1
+    400034: Bone04
+    400036: Bone04 1
+    400038: Bone04 2
+    400040: Bone05
+    400042: Bone06
+    400044: Bone06 1
+    400046: Bone07
+    400048: Bone08
+    400050: Bone08 1
+    400052: Bone08 2
+    400054: Bone09
+    400056: Bone10
+    400058: Bone10 1
+    400060: Bone10 2
+    400062: Bone11
+    400064: Bone11 1
+    400066: Bone12
+    400068: Bone12 1
+    400070: Bone12 2
+    400072: Bone13
+    400074: Bone13 1
+    400076: Bone14
+    400078: Bone15
+    400080: E_role_1001_wp01
+    400082: E_role_1001_wp01 1
+    400084: E_role_1001_wp01 2
+    400086: E_role_1001_wp01_0
+    400088: E_role_1001_wp01_0 1
+    400090: E_role_1001_wp01_0 2
+    400092: Object010
+    400094: Object010_0
+    400096: Object07
+    400098: Object07_0
+    400100: Object09
+    400102: Object09_0
+    400104: Plane001
+    400106: Plane001 1
+    400108: Plane001_0
+    400110: Plane001_0 1
+    400112: //RootNode
+    400114: role_1011
+    400116: weapon1
+    400118: weapon2
+    400120: weapon3
+    400122: wing1
+    400124: wing1_0
+    400126: wing2
+    400128: wing3
+    400130: wing4
+    2300000: E_role_1001_wp01_0
+    2300002: E_role_1001_wp01_0 1
+    2300004: E_role_1001_wp01_0 2
+    2300006: wing1_0
+    3300000: E_role_1001_wp01_0
+    3300002: E_role_1001_wp01_0 1
+    3300004: E_role_1001_wp01_0 2
+    3300006: wing1_0
+    4300000: E_role_1001_wp01_0
+    4300002: E_role_1001_wp01_0
+    4300004: E_role_1001_wp01_0
+    4300006: wing1_0
+    4300008: Object07_0
+    4300010: Object09_0
+    4300012: Object010_0
+    4300014: Plane001_0
+    4300016: Plane001_0
+    9500000: //RootNode
+    13700000: Object010_0
+    13700002: Object07_0
+    13700004: Object09_0
+    13700006: Plane001_0
+    13700008: Plane001_0 1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

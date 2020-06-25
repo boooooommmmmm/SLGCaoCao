@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 90c0807e3203cc04899b2a330f4dbaa2
+timeCreated: 1540289966
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: body_0
+    100004: Boot
+    100006: Head
+    100008: L_Calf
+    100010: L_Thigh
+    100012: L_Toe1
+    100014: L_Toe2
+    100016: L_Toe3
+    100018: L_Toe4
+    100020: L_Toe5
+    100022: L_Toe6
+    100024: L_Wings1
+    100026: L_Wings2
+    100028: L_Wings3
+    100030: L_Wings4
+    100032: L_Wings5
+    100034: L_Wings6
+    100036: L_Wings7
+    100038: L_Wings8
+    100040: Mouth
+    100042: Pet_1522_D
+    100044: //RootNode
+    100046: PM_Monster_Spearow
+    100048: PM_Monster_Spearow_0
+    100050: R_Calf
+    100052: R_Thigh
+    100054: R_Toe1
+    100056: R_Toe2
+    100058: R_Toe3
+    100060: R_Toe4
+    100062: R_Toe5
+    100064: R_Toe6
+    100066: R_Wings1
+    100068: R_Wings2
+    100070: R_Wings3
+    100072: R_Wings4
+    100074: R_Wings5
+    100076: R_Wings6
+    100078: R_Wings7
+    100080: R_Wings8
+    100082: Spine
+    100084: Spine1
+    100086: Tail
+    400000: body
+    400002: body_0
+    400004: Boot
+    400006: Head
+    400008: L_Calf
+    400010: L_Thigh
+    400012: L_Toe1
+    400014: L_Toe2
+    400016: L_Toe3
+    400018: L_Toe4
+    400020: L_Toe5
+    400022: L_Toe6
+    400024: L_Wings1
+    400026: L_Wings2
+    400028: L_Wings3
+    400030: L_Wings4
+    400032: L_Wings5
+    400034: L_Wings6
+    400036: L_Wings7
+    400038: L_Wings8
+    400040: Mouth
+    400042: //RootNode
+    400044: Pet_1522_D
+    400046: PM_Monster_Spearow
+    400048: PM_Monster_Spearow_0
+    400050: R_Calf
+    400052: R_Thigh
+    400054: R_Toe1
+    400056: R_Toe2
+    400058: R_Toe3
+    400060: R_Toe4
+    400062: R_Toe5
+    400064: R_Toe6
+    400066: R_Wings1
+    400068: R_Wings2
+    400070: R_Wings3
+    400072: R_Wings4
+    400074: R_Wings5
+    400076: R_Wings6
+    400078: R_Wings7
+    400080: R_Wings8
+    400082: Spine
+    400084: Spine1
+    400086: Tail
+    4300000: PM_Monster_Spearow_0
+    4300002: body_0
+    7400000: idle
+    7400002: move
+    9500000: //RootNode
+    13700000: body_0
+    13700002: PM_Monster_Spearow_0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

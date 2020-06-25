@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: 761b7cdc3b1a7bf48a7781c0e0cde348
+timeCreated: 1540289951
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Effect_1011tbigskill01
+    100002: Effect_1011tbigskill02
+    100004: Effect_1011tbigskill03
+    100006: //RootNode
+    100008: Effect_1011tbigskill_L
+    100010: Effect_1011tbigskill_L 1
+    100012: ice_01
+    100014: ice_01 1
+    100016: ice_01 2
+    100018: ice_01_0
+    100020: ice_01_0 1
+    100022: ice_01_0 2
+    100024: ice_02
+    100026: ice_02 1
+    100028: ice_02 2
+    100030: ice_02_0
+    100032: ice_02_0 1
+    100034: ice_02_0 2
+    100036: ice_03
+    100038: ice_03 1
+    100040: ice_03 2
+    100042: ice_03_0
+    100044: ice_03_0 1
+    100046: ice_03_0 2
+    400000: Effect_1011tbigskill01
+    400002: Effect_1011tbigskill02
+    400004: Effect_1011tbigskill03
+    400006: //RootNode
+    400008: Effect_1011tbigskill_L
+    400010: Effect_1011tbigskill_L 1
+    400012: ice_01
+    400014: ice_01 1
+    400016: ice_01 2
+    400018: ice_01_0
+    400020: ice_01_0 1
+    400022: ice_01_0 2
+    400024: ice_02
+    400026: ice_02 1
+    400028: ice_02 2
+    400030: ice_02_0
+    400032: ice_02_0 1
+    400034: ice_02_0 2
+    400036: ice_03
+    400038: ice_03 1
+    400040: ice_03 2
+    400042: ice_03_0
+    400044: ice_03_0 1
+    400046: ice_03_0 2
+    2300000: ice_01_0
+    2300002: ice_01_0 1
+    2300004: ice_01_0 2
+    2300006: ice_02_0
+    2300008: ice_02_0 1
+    2300010: ice_02_0 2
+    2300012: ice_03_0
+    2300014: ice_03_0 1
+    2300016: ice_03_0 2
+    3300000: ice_01_0
+    3300002: ice_01_0 1
+    3300004: ice_01_0 2
+    3300006: ice_02_0
+    3300008: ice_02_0 1
+    3300010: ice_02_0 2
+    3300012: ice_03_0
+    3300014: ice_03_0 1
+    3300016: ice_03_0 2
+    4300000: ice_01_0
+    4300002: ice_02_0
+    4300004: ice_03_0
+    4300006: ice_01_0
+    4300008: ice_02_0
+    4300010: ice_03_0
+    4300012: ice_01_0
+    4300014: ice_02_0
+    4300016: ice_03_0
+    7400000: Effect_1011tbigskill_L
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

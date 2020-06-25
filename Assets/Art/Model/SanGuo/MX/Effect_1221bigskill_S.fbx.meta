@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 391bb5632b5fa9640885752ca7b8426c
+timeCreated: 1540289918
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Dummy003
+    100002: Dummy004
+    100004: Dummy005
+    100006: Dummy006
+    100008: Effect_1221bigskill01
+    100010: Effect_1221bigskill01 1
+    100012: Effect_1221bigskill01 2
+    100014: Effect_1221bigskill01_0
+    100016: Effect_1221bigskill01_0 1
+    100018: Effect_1221bigskill01_0 2
+    100020: Effect_1221bigskill02
+    100022: Effect_1221bigskill02 1
+    100024: Effect_1221bigskill02 2
+    100026: Effect_1221bigskill02_0
+    100028: Effect_1221bigskill02_0 1
+    100030: Effect_1221bigskill02_0 2
+    100032: Effect_1221bigskill03
+    100034: Effect_1221bigskill03 1
+    100036: Effect_1221bigskill03 2
+    100038: Effect_1221bigskill03_0
+    100040: Effect_1221bigskill03_0 1
+    100042: Effect_1221bigskill03_0 2
+    100044: Effect_1221bigskill04
+    100046: Effect_1221bigskill04 1
+    100048: Effect_1221bigskill04 2
+    100050: Effect_1221bigskill04_0
+    100052: Effect_1221bigskill04_0 1
+    100054: Effect_1221bigskill04_0 2
+    100056: Effect_1221bigskill05
+    100058: Effect_1221bigskill05_0
+    100060: Effect_1221bigskill06
+    100062: Effect_1221bigskill06_0
+    100064: Effect_1221bigskill07
+    100066: Effect_1221bigskill07_0
+    100068: //RootNode
+    100070: Effect_1221bigskill_S
+    100072: Effect_1221bigskill_S 1
+    100074: Object003
+    100076: Object003_0
+    100078: Object004
+    100080: Object004_0
+    100082: Object005
+    100084: Object005_0
+    100086: Object006
+    100088: Object006_0
+    400000: Dummy003
+    400002: Dummy004
+    400004: Dummy005
+    400006: Dummy006
+    400008: Effect_1221bigskill01
+    400010: Effect_1221bigskill01 1
+    400012: Effect_1221bigskill01 2
+    400014: Effect_1221bigskill01_0
+    400016: Effect_1221bigskill01_0 1
+    400018: Effect_1221bigskill01_0 2
+    400020: Effect_1221bigskill02
+    400022: Effect_1221bigskill02 1
+    400024: Effect_1221bigskill02 2
+    400026: Effect_1221bigskill02_0
+    400028: Effect_1221bigskill02_0 1
+    400030: Effect_1221bigskill02_0 2
+    400032: Effect_1221bigskill03
+    400034: Effect_1221bigskill03 1
+    400036: Effect_1221bigskill03 2
+    400038: Effect_1221bigskill03_0
+    400040: Effect_1221bigskill03_0 1
+    400042: Effect_1221bigskill03_0 2
+    400044: Effect_1221bigskill04
+    400046: Effect_1221bigskill04 1
+    400048: Effect_1221bigskill04 2
+    400050: Effect_1221bigskill04_0
+    400052: Effect_1221bigskill04_0 1
+    400054: Effect_1221bigskill04_0 2
+    400056: Effect_1221bigskill05
+    400058: Effect_1221bigskill05_0
+    400060: Effect_1221bigskill06
+    400062: Effect_1221bigskill06_0
+    400064: Effect_1221bigskill07
+    400066: Effect_1221bigskill07_0
+    400068: //RootNode
+    400070: Effect_1221bigskill_S
+    400072: Effect_1221bigskill_S 1
+    400074: Object003
+    400076: Object003_0
+    400078: Object004
+    400080: Object004_0
+    400082: Object005
+    400084: Object005_0
+    400086: Object006
+    400088: Object006_0
+    2300000: Effect_1221bigskill01_0
+    2300002: Effect_1221bigskill01_0 1
+    2300004: Effect_1221bigskill01_0 2
+    2300006: Effect_1221bigskill02_0
+    2300008: Effect_1221bigskill02_0 1
+    2300010: Effect_1221bigskill02_0 2
+    2300012: Effect_1221bigskill03_0
+    2300014: Effect_1221bigskill03_0 1
+    2300016: Effect_1221bigskill03_0 2
+    2300018: Effect_1221bigskill04_0
+    2300020: Effect_1221bigskill04_0 1
+    2300022: Effect_1221bigskill04_0 2
+    2300024: Effect_1221bigskill05_0
+    2300026: Effect_1221bigskill06_0
+    2300028: Effect_1221bigskill07_0
+    2300030: Object003_0
+    2300032: Object004_0
+    2300034: Object005_0
+    2300036: Object006_0
+    3300000: Effect_1221bigskill01_0
+    3300002: Effect_1221bigskill01_0 1
+    3300004: Effect_1221bigskill01_0 2
+    3300006: Effect_1221bigskill02_0
+    3300008: Effect_1221bigskill02_0 1
+    3300010: Effect_1221bigskill02_0 2
+    3300012: Effect_1221bigskill03_0
+    3300014: Effect_1221bigskill03_0 1
+    3300016: Effect_1221bigskill03_0 2
+    3300018: Effect_1221bigskill04_0
+    3300020: Effect_1221bigskill04_0 1
+    3300022: Effect_1221bigskill04_0 2
+    3300024: Effect_1221bigskill05_0
+    3300026: Effect_1221bigskill06_0
+    3300028: Effect_1221bigskill07_0
+    3300030: Object003_0
+    3300032: Object004_0
+    3300034: Object005_0
+    3300036: Object006_0
+    4300000: Object004_0
+    4300002: Object003_0
+    4300004: Effect_1221bigskill01_0
+    4300006: Effect_1221bigskill02_0
+    4300008: Effect_1221bigskill03_0
+    4300010: Effect_1221bigskill04_0
+    4300012: Object006_0
+    4300014: Effect_1221bigskill01_0
+    4300016: Effect_1221bigskill02_0
+    4300018: Effect_1221bigskill03_0
+    4300020: Effect_1221bigskill04_0
+    4300022: Object005_0
+    4300024: Effect_1221bigskill01_0
+    4300026: Effect_1221bigskill02_0
+    4300028: Effect_1221bigskill03_0
+    4300030: Effect_1221bigskill04_0
+    4300032: Effect_1221bigskill05_0
+    4300034: Effect_1221bigskill06_0
+    4300036: Effect_1221bigskill07_0
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
