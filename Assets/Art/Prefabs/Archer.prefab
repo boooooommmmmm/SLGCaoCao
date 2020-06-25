@@ -956,6 +956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2471046260236270904}
   - component: {fileID: 2471046260227199718}
+  - component: {fileID: 2911982918565415157}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -997,6 +998,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &2911982918565415157
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2471046260236689752}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: af71a6631875c21419eb6a9522ab3665, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2471046260236689754
 GameObject:
   m_ObjectHideFlags: 0
