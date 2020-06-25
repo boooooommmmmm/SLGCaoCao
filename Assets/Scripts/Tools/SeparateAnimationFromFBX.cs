@@ -9,14 +9,17 @@ public class SeparateAnimationFromFBX
     [MenuItem("GameObject/Tools/SeparateAnimations &1")]
     static void CreateAnim()
     {
-        Object[] selectionAsset = Selection.GetFiltered(typeof(Object), SelectionMode.Unfiltered);            
+        Object[] selectionAsset = Selection.GetFiltered(typeof(Object), SelectionMode.Unfiltered);
         
         foreach (Object asset in selectionAsset)
         {
+            Debug.Log("asset name: " + asset.name);
+
             string assetName = selectionAsset[0].name;
             string targetPath = Application.dataPath + "Art/Animations/" + assetName;
             if (!Directory.Exists(targetPath))
             {
+                Debug.Log("not exists");
                 Directory.CreateDirectory(targetPath);
             }
 
