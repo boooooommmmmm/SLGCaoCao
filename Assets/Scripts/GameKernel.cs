@@ -18,6 +18,8 @@ namespace Framework
             return _instance;
         }
 
+        public event Action OnOnDestroy = delegate { };
+
 
         private void Awake()
         {
@@ -34,7 +36,18 @@ namespace Framework
             {
                 throw new SystemException("UI kernel not serialized!");
             }
+        }
 
+        private void Start()
+        {
+            //load static data
+            var moduleInstance = ModuleManager.Get();
+            moduleInstance.CreateModule<StaticDataModule>("_staticData");
+        }
+
+        private void OnDestroy()
+        {
+            OnOnDestroy();
         }
     }
 }

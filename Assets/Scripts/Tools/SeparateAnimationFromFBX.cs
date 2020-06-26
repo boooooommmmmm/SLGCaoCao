@@ -49,6 +49,7 @@ public class SeparateAnimationFromFBX
             aoc.runtimeAnimatorController = AssetDatabase.LoadAssetAtPath<AnimatorController>("Assets/Art/Animations/_base/CharacterBaseAnimatorController.controller");
 
             AnimationClipOverrides clipOverrides = new AnimationClipOverrides(aoc.overridesCount);
+            aoc.GetOverrides(clipOverrides);
             clipOverrides["attack"] = animationClipDir["attack"];
             clipOverrides["fight_be_hit"] = animationClipDir["fight_be_hit_0"];
             clipOverrides["fight_death"] = animationClipDir["fight_death"];
