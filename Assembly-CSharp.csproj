@@ -63,6 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Framework\Modules\ModuleBase\ModuleBase.cs" />
+    <Compile Include="Assets\Scripts\Framework\Modules\ModuleManager.cs" />
+    <Compile Include="Assets\Scripts\Framework\Modules\StaticDataModule.cs" />
     <Compile Include="Assets\Scripts\GameKernel.cs" />
     <Compile Include="Assets\Scripts\Tools\SeparateAnimationFromFBX.cs" />
     <Compile Include="Assets\Scripts\UIKernel.cs" />
