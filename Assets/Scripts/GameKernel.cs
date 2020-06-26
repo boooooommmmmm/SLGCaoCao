@@ -3,6 +3,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Framework.Core;
+using Framework.Data;
 
 namespace Framework
 {
@@ -18,6 +20,8 @@ namespace Framework
             return _instance;
         }
 
+        public event Action<float> OnUpdate = delegate { };
+        public event Action<float> OnLateUpdate = delegate { };
         public event Action OnOnDestroy = delegate { };
 
 
@@ -30,7 +34,7 @@ namespace Framework
             }
             _instance = this;
             DontDestroyOnLoad(this);
-
+            
             //check sub kernels
             if (uiKernel == null)
             {
@@ -42,12 +46,26 @@ namespace Framework
         {
             //load static data
             var moduleInstance = ModuleManager.Get();
-            moduleInstance.CreateModule<StaticDataModule>("_staticData");
+            moduleInstance.CreateModule<StaticDataModule>("StaticData");
         }
 
         private void OnDestroy()
         {
             OnOnDestroy();
         }
+
+        private void Update()
+        {
+            OnUpdate(Time.deltaTime);
+        }
+
+        private void LateUpdate()
+        {
+            OnLateUpdate(Time.deltaTime);
+        }
+
+        #region public APIs
+
+        #endregion
     }
 }

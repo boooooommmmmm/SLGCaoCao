@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Framework
+namespace Framework.Core
 {
     public class ModuleManager
     {
@@ -32,6 +32,16 @@ namespace Framework
                 Shutdown();
             };
         }
+        
+        void Shutdown()
+        {
+            foreach (var module in _modules.Values)
+            {
+                module.Shutdown();
+            }
+
+            _modules.Clear();
+        }
 
 
         public T CreateModule<T>(string name) where T : class, IModule, new()
@@ -50,14 +60,24 @@ namespace Framework
             return module;
         }
 
-        void Shutdown()
+        public T GetModule<T>(string name) where T : class, IModule
         {
-            foreach (var module in _modules.Values)
+            IModule module = null;
+            if (_modules.TryGetValue(name, out module) && module != null)
             {
-                module.Shutdown();
+                if (module is T)
+                {
+                    return (module as T);
+                }
+                else
+                {
+                    throw new SystemException(string.Format("Module type mismatch, name : {0}, type : {1}", name, typeof(T)));
+                }
             }
-
-            _modules.Clear();
+            else
+            {
+                return null;
+            }
         }
     }
 }
