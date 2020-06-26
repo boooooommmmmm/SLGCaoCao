@@ -12,10 +12,10 @@
 #ExportedObj/
 .consulo/
 *.csproj
-#*.unityproj
-#*.sln
-#*.suo
-#*.tmp
+*.unityproj
+*.sln
+*.suo
+*.tmp
 #*.user
 #*.userprefs
 #*.pidb
