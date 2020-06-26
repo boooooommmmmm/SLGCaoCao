@@ -14,7 +14,7 @@
 *.csproj
 #*.unityproj
 #*.sln
-*.suo
+#*.suo
 #*.tmp
 #*.user
 #*.userprefs
