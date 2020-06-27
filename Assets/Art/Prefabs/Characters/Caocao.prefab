@@ -572,8 +572,8 @@ GameObject:
   - component: {fileID: 8297444774378637182}
   - component: {fileID: 8297444774388197600}
   - component: {fileID: 7952741968337448461}
-  - component: {fileID: 7208343664325059344}
   - component: {fileID: 6772239165478358403}
+  - component: {fileID: 4893180582050878681}
   m_Layer: 0
   m_Name: Caocao
   m_TagString: Untagged
@@ -628,28 +628,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7208343664325059344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8297444774378805918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 611db7cf69bf9ec48993ec5ddda3bfbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cell: {fileID: 0}
-  HitPoints: 10
-  AttackRange: 1
-  AttackFactor: 5
-  DefenceFactor: 1
-  movementPoints: 5
-  MovementAnimationSpeed: 10
-  actionPoints: 1
-  PlayerNumber: 0
-  LeadingColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!23 &6772239165478358403
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -689,6 +667,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4893180582050878681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8297444774378805918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bee86d5612ebd44285534184d866d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cell: {fileID: 0}
+  HitPoints: 10
+  AttackRange: 1
+  AttackFactor: 5
+  DefenceFactor: 1
+  movementPoints: 5
+  MovementAnimationSpeed: 10
+  actionPoints: 1
+  PlayerNumber: 0
+  LeadingColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &8297444774378805920
 GameObject:
   m_ObjectHideFlags: 0

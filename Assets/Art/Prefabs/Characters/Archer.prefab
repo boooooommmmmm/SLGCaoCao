@@ -957,8 +957,8 @@ GameObject:
   - component: {fileID: 2471046260236270904}
   - component: {fileID: 2471046260227199718}
   - component: {fileID: 1051705907547576537}
-  - component: {fileID: 9108419195340530552}
   - component: {fileID: 714399423012140848}
+  - component: {fileID: 6735170353288347096}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -1013,28 +1013,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9108419195340530552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2471046260236689752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 611db7cf69bf9ec48993ec5ddda3bfbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cell: {fileID: 0}
-  HitPoints: 10
-  AttackRange: 1
-  AttackFactor: 5
-  DefenceFactor: 1
-  movementPoints: 5
-  MovementAnimationSpeed: 10
-  actionPoints: 1
-  PlayerNumber: 1
-  LeadingColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!23 &714399423012140848
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1074,6 +1052,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6735170353288347096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2471046260236689752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bee86d5612ebd44285534184d866d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cell: {fileID: 0}
+  HitPoints: 10
+  AttackRange: 1
+  AttackFactor: 5
+  DefenceFactor: 1
+  movementPoints: 5
+  MovementAnimationSpeed: 10
+  actionPoints: 1
+  PlayerNumber: 1
+  LeadingColor: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1 &2471046260236689754
 GameObject:
   m_ObjectHideFlags: 0
