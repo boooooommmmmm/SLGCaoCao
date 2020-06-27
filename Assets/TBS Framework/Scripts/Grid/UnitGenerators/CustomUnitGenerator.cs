@@ -20,6 +20,9 @@ namespace TbsFramework.Grid.UnitGenerators
             List<Unit> ret = new List<Unit>();
             for (int i = 0; i < UnitsParent.childCount; i++)
             {
+                if (UnitsParent.GetChild(i).gameObject.activeSelf == false)
+                    continue;
+
                 var unit = UnitsParent.GetChild(i).GetComponent<Unit>();
                 if (unit != null)
                 {
