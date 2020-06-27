@@ -8389,6 +8389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SampleSquare
       objectReference: {fileID: 0}
+    - target: {fileID: 1118113730636360, guid: 7c6408b463badd046a327bec7ea41d35, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4229712544712724, guid: 7c6408b463badd046a327bec7ea41d35, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

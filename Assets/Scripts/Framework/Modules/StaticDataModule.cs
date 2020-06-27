@@ -11,16 +11,16 @@ namespace Framework.Data
     {
         public sealed override void Start()
         {
-            StreamReader inp_stm = new StreamReader("Design/Characters.csv", Encoding.UTF8);
+            //StreamReader inp_stm = new StreamReader("Design/Characters.csv", Encoding.UTF8);
 
-            while (!inp_stm.EndOfStream)
-            {
-                string inp_ln = inp_stm.ReadLine();
+            //while (!inp_stm.EndOfStream)
+            //{
+            //    string inp_ln = inp_stm.ReadLine();
 
-                Debug.Log(inp_ln);
-            }
+            //    Debug.Log(inp_ln);
+            //}
 
-            inp_stm.Close();
+            //inp_stm.Close();
         }
 
         //void parseData()

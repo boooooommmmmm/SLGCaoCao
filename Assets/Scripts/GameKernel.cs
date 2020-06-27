@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Framework.Core;
 using Framework.Data;
+using Framework.StateMachine;
+using Framework.Record;
 
 namespace Framework
 {
@@ -47,6 +49,17 @@ namespace Framework
             //load static data
             var moduleInstance = ModuleManager.Get();
             moduleInstance.CreateModule<StaticDataModule>("StaticData");
+            moduleInstance.CreateModule<RecordModule>("Record");
+
+            //init state machine
+            var stateMachine = StateMachineManager.Get();
+            //stateMachine.CreateState<RootStateMachine>("Root");
+            stateMachine.CreateState<StartStateMachine>("Start");
+            //Login
+            //Lobby
+            stateMachine.CreateState<BattleStateMachine>("Battle");
+
+            stateMachine.SwitchState("Start");
         }
 
         private void OnDestroy()
