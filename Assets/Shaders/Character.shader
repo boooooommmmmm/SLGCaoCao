@@ -3,7 +3,9 @@
 	Properties
 	{
 		_MainTex("Texture", 2D) = "white" {}
-		_Gray("Gray", Range(0,1)) = 1
+		_Gray("Gray", Range(0,1)) = 0
+		_Hitted("Hitted", Range(0,1)) = 0
+		_Hitted_Col("Hitted_Col", Color) = (1,0,0,1)
 	}
 		SubShader
 		{
@@ -16,11 +18,13 @@
 				#pragma vertex vert
 				#pragma fragment frag
 				// make fog work
-				#pragma multi_compile_fog
+				#pragma multi_compile_fog				
 
 				#include "UnityCG.cginc"
 
 				uniform fixed _Gray;
+				fixed _Hitted;
+				fixed4 _Hitted_Col;
 
 				struct appdata
 				{
@@ -51,17 +55,22 @@
 				{
 					// sample the texture
 					fixed4 col = tex2D(_MainTex, i.uv);
-				// apply fog
-				UNITY_APPLY_FOG(i.fogCoord, col);
+					// apply fog
+					UNITY_APPLY_FOG(i.fogCoord, col);
 
-				//set gray
-				fixed gray = 0.2125 * col.r + 0.7154 * col.g + 0.0721 * col.b;
-				fixed3 grayColor = fixed3(gray, gray, gray);
-				fixed3 finalColor = lerp(grayColor, col, _Gray);
+					//color setting
+					fixed3 finalColor = col;
+					//set gray
+					fixed gray = 0.2125 * col.r + 0.7154 * col.g + 0.0721 * col.b;
+					fixed3 grayColor = fixed3(gray, gray, gray);
+					finalColor = lerp(finalColor, grayColor, _Gray);
 
-				return fixed4(finalColor, col.a);
+					//set red
+					finalColor = lerp(finalColor, _Hitted_Col, _Hitted);
+
+					return fixed4(finalColor, col.a);
+				}
+				ENDCG
 			}
-			ENDCG
-		}
 		}
 }
