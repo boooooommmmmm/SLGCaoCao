@@ -23,6 +23,7 @@ public class SeparateAnimationFromFBX
 
             //cache animation clips
             var animationClipDir = new Dictionary<string, AnimationClip>();
+            var newAnimationClipDir = new Dictionary<string, AnimationClip>();
             Object[] objects = AssetDatabase.LoadAllAssetsAtPath(AssetDatabase.GetAssetPath(asset.GetInstanceID()));
             foreach (Object obj in objects)
             {
@@ -37,15 +38,11 @@ public class SeparateAnimationFromFBX
                 AnimationClip newClip = new AnimationClip();
                 EditorUtility.CopySerialized(ac, newClip);
 
-                //newClip.frameRate = 60f;
-
                 if (ac.name.Equals("run") || ac.name.Equals("victory") || ac.name.Equals("stand"))
                 {
-                    //newClip.wrapMode = WrapMode.Loop;
-
                     AnimationClipSettings _setting = AnimationUtility.GetAnimationClipSettings(ac);
                     _setting.loopTime = true;
-                    AnimationUtility.SetAnimationClipSettings(ac, _setting);
+                    AnimationUtility.SetAnimationClipSettings(ac, _setting);                    
                 }
                 else
                 {
@@ -54,9 +51,10 @@ public class SeparateAnimationFromFBX
                     AnimationClipSettings _setting = AnimationUtility.GetAnimationClipSettings(ac);
                     _setting.loopTime = false;
                     AnimationUtility.SetAnimationClipSettings(ac, _setting);
-                }                    
+                }
 
-                AssetDatabase.CreateAsset(newClip, "Assets/Art/Animations/" + assetName + "/" + ac.name + ".anim");
+                newAnimationClipDir.Add(ac.name, newClip);
+                AssetDatabase.CreateAsset(newClip, "Assets/Art/Animations/" + assetName + "/" + assetName + "_" + ac.name + ".anim");
             }
             AssetDatabase.Refresh();
 
@@ -66,21 +64,23 @@ public class SeparateAnimationFromFBX
 
             AnimationClipOverrides clipOverrides = new AnimationClipOverrides(aoc.overridesCount);
             aoc.GetOverrides(clipOverrides);
-            clipOverrides["attack"] = animationClipDir["attack"];
-            clipOverrides["fight_be_hit"] = animationClipDir["fight_be_hit_0"];
-            clipOverrides["fight_death"] = animationClipDir["fight_death"];
-            clipOverrides["run"] = animationClipDir["run"];
-            clipOverrides["skill"] = animationClipDir["skill"];
-            clipOverrides["skill_l"] = animationClipDir["skill_l"];
-            clipOverrides["stand"] = animationClipDir["stand"];
-            clipOverrides["victory"] = animationClipDir["victory"];
+            clipOverrides["attack"] = newAnimationClipDir.ContainsKey("attack") ? newAnimationClipDir["attack"] : null;
+            clipOverrides["fight_be_hit"] = newAnimationClipDir.ContainsKey("fight_be_hit_0") ? newAnimationClipDir["fight_be_hit_0"] : null;
+            clipOverrides["fight_death"] = newAnimationClipDir.ContainsKey("fight_death") ? newAnimationClipDir["fight_death"] : null;
+            clipOverrides["run"] = newAnimationClipDir.ContainsKey("run") ? newAnimationClipDir["run"] : null;
+            clipOverrides["skill"] = newAnimationClipDir.ContainsKey("skill") ? newAnimationClipDir["skill"] : null;
+            clipOverrides["skill_l"] = newAnimationClipDir.ContainsKey("skill_l") ? newAnimationClipDir["skill_l"] : null;
+            clipOverrides["stand"] = newAnimationClipDir.ContainsKey("stand") ? newAnimationClipDir["stand"] : null;
+            clipOverrides["victory"] = newAnimationClipDir.ContainsKey("victory") ? newAnimationClipDir["victory"] : null;
 
             aoc.ApplyOverrides(clipOverrides);
 
             AssetDatabase.CreateAsset(aoc, "Assets/Art/Animations/" + assetName + "/" + assetName + "AC" + ".overrideController");
             AssetDatabase.Refresh();
         }
+
         AssetDatabase.Refresh();
+        Debug.Log("Animation extrat finished!");
     }
 
     public class AnimationClipOverrides : List<KeyValuePair<AnimationClip, AnimationClip>>

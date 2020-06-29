@@ -21,7 +21,7 @@ namespace Framework.Core
         public override void Initialize()
         {
             base.Initialize();
-            transform.localPosition -= new Vector3(0, 0, 1);
+            transform.localPosition -= new Vector3(0, 0, 1);//terrian has height
 
             //init MaterialPropertyBlock
             foreach (Renderer render in m_ListRenders)
@@ -37,10 +37,12 @@ namespace Framework.Core
         }
         public override void MarkAsAttacking(Unit other)
         {
+            AnimatorController.SetTrigger("TriggerAttack");
         }
 
         public override void MarkAsDefending(Unit other)
         {
+            AnimatorController.SetTrigger("TriggerHitted");
         }
 
         public override void MarkAsDestroyed()
@@ -51,6 +53,7 @@ namespace Framework.Core
         {
             //set gray
             StartCoroutine(SetGray(true));
+            AnimatorController.SetTrigger("TriggerIdle");
         }
 
         public override void MarkAsFriendly()
@@ -60,17 +63,19 @@ namespace Framework.Core
         public override void MarkAsReachableEnemy()
         {
             //set red
+            StartCoroutine(SetRed(true));
         }
 
         public override void MarkAsSelected()
         {
-            //change animation to run
-            StartCoroutine(SetRed(true));
+            //change animation to run            
+            AnimatorController.SetTrigger("TriggerRun");
         }
 
         public override void UnMark()
         {
             //change animation back to idle
+            AnimatorController.SetTrigger("TriggerIdle");
         }
 
         private IEnumerator SetGray(bool b)

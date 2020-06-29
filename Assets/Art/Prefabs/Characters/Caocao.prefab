@@ -691,6 +691,7 @@ MonoBehaviour:
   m_ListRenders:
   - {fileID: 8297444774384080416}
   - {fileID: 8297444774384080418}
+  AnimatorController: {fileID: 8297444774388197600}
 --- !u!1 &8297444774378805920
 GameObject:
   m_ObjectHideFlags: 0

@@ -1073,7 +1073,10 @@ MonoBehaviour:
   MovementAnimationSpeed: 10
   actionPoints: 1
   PlayerNumber: 1
-  LeadingColor: {r: 1, g: 1, b: 0, a: 0}
+  m_ListRenders:
+  - {fileID: 2471046260223093798}
+  - {fileID: 2471046260223093796}
+  AnimatorController: {fileID: 2471046260227199718}
 --- !u!1 &2471046260236689754
 GameObject:
   m_ObjectHideFlags: 0
