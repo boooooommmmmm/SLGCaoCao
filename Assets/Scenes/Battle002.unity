@@ -4376,6 +4376,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaoRen
       objectReference: {fileID: 0}
+    - target: {fileID: 5949120923122216560, guid: f5da525d03c211f47b48dd78561129a2,
+        type: 3}
+      propertyPath: m_ListSkills.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5da525d03c211f47b48dd78561129a2, type: 3}
 --- !u!1001 &1117538412
