@@ -43,10 +43,12 @@ namespace Framework.Core
         public override void MarkAsDefending(Unit other)
         {
             AnimatorController.SetTrigger("TriggerHitted");
+            StartCoroutine(SetRed(true, true));
         }
 
         public override void MarkAsDestroyed()
         {
+            //play death animation then destroy
         }
 
         public override void MarkAsFinished()
@@ -63,7 +65,7 @@ namespace Framework.Core
         public override void MarkAsReachableEnemy()
         {
             //set red
-            StartCoroutine(SetRed(true));
+            StartCoroutine(SetRed(true, false));
         }
 
         public override void MarkAsSelected()
@@ -104,10 +106,10 @@ namespace Framework.Core
             }
         }
 
-        private IEnumerator SetRed(bool b)
+        private IEnumerator SetRed(bool b, bool isYoyo = false)
         {
             float timeCount = 0;
-            float red = b ? 0 : fMaxRed;
+            float red;
 
             while (timeCount < fSetRedSpeed)
             {
@@ -119,15 +121,36 @@ namespace Framework.Core
                 }
 
                 timeCount += Time.deltaTime;
-
                 yield return new WaitForEndOfFrame();
+            }
+
+            if (isYoyo)
+            {
+                timeCount = 0;
+                b = !b;
+                while (timeCount < fSetRedSpeed)
+                {
+                    red = b ? timeCount / fSetRedSpeed * fMaxRed : (fMaxRed - timeCount / fSetRedSpeed);
+                    for (int i = 0; i < m_ListMPB.Count; i++)
+                    {
+                        m_ListMPB[i].SetFloat("_Hitted", red);
+                        m_ListRenders[i].SetPropertyBlock(m_ListMPB[i]);
+                    }
+
+                    timeCount += Time.deltaTime;
+                    yield return new WaitForEndOfFrame();
+                }
             }
 
             for (int i = 0; i < m_ListMPB.Count; i++)
             {
-                m_ListMPB[i].SetFloat("_Hitted", b ? fMaxRed : 0f);
+                if (isYoyo)
+                    m_ListMPB[i].SetFloat("_Hitted", b ? 0f : fMaxRed);
+                else
+                    m_ListMPB[i].SetFloat("_Hitted", b ? fMaxRed : 0f);
                 m_ListRenders[i].SetPropertyBlock(m_ListMPB[i]);
             }
+
         }
     }
 }

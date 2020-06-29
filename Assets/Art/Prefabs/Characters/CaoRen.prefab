@@ -601,9 +601,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4521950086880933921}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: -0.5, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 4521950086880699465}
   - {fileID: 4521950086880699517}
@@ -621,6 +621,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4521950086880699393}
   - component: {fileID: 4521950086871436201}
+  - component: {fileID: 5949120923122216560}
+  - component: {fileID: 6899724988113340660}
   m_Layer: 0
   m_Name: CaoRen
   m_TagString: Untagged
@@ -653,7 +655,7 @@ Animator:
   m_GameObject: {fileID: 4521950086880933923}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: d4f47fd33c21493488fca07ee43e864c, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 7f2fac1f3d1f4674eb60c973c7ed5d21, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -662,6 +664,44 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5949120923122216560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521950086880933923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bee86d5612ebd44285534184d866d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cell: {fileID: 0}
+  HitPoints: 10
+  AttackRange: 2
+  AttackFactor: 5
+  DefenceFactor: 1
+  movementPoints: 3
+  MovementAnimationSpeed: 5
+  actionPoints: 1
+  PlayerNumber: 0
+  m_ListRenders:
+  - {fileID: 4521950086875657577}
+  - {fileID: 4521950086875657579}
+  AnimatorController: {fileID: 4521950086871436201}
+--- !u!65 &6899724988113340660
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521950086880933923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4521950086880933925
 GameObject:
   m_ObjectHideFlags: 0
