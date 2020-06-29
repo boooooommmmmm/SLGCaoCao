@@ -13,6 +13,7 @@
 
         public override void MakeTransition(UnitState state)
         {
+            _unit.MarkAsNotReachableEnemy();
             state.Apply();
             _unit.UnitState = state;
         }

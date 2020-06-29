@@ -1628,6 +1628,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1985093388}
     m_Modifications:
+    - target: {fileID: 4893180582050878681, guid: 15c5bcccdb70a05499663127ff336032,
+        type: 3}
+      propertyPath: HitPoints
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 7208343664325059344, guid: 15c5bcccdb70a05499663127ff336032,
         type: 3}
       propertyPath: cell

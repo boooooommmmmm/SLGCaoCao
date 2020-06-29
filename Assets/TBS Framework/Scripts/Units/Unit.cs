@@ -139,6 +139,8 @@ namespace TbsFramework.Units
         /// </summary>
         public bool IsMoving { get; set; }
 
+        public bool IsFinished = false;
+
         private static DijkstraPathfinding _pathfinder = new DijkstraPathfinding();
         private static IPathfinding _fallbackPathfinder = new AStarPathfinding();
 
@@ -183,6 +185,7 @@ namespace TbsFramework.Units
         /// </summary>
         public virtual void OnTurnStart()
         {
+            IsFinished = false;
             MovementPoints = TotalMovementPoints;
             ActionPoints = TotalActionPoints;
 
@@ -193,6 +196,7 @@ namespace TbsFramework.Units
         /// </summary>
         public virtual void OnTurnEnd()
         {
+            IsFinished = true;
             cachedPaths = null;
             Buffs.FindAll(b => b.Duration == 0).ForEach(b => { b.Undo(this); });
             Buffs.RemoveAll(b => b.Duration == 0);
@@ -372,7 +376,16 @@ namespace TbsFramework.Units
         /// <summary>
         /// Method called after movement animation has finished.
         /// </summary>
-        protected virtual void OnMoveFinished() { }
+        protected virtual void OnMoveFinished() 
+        {
+            if (IsFinished)
+                OnUnitFinished();
+        }
+
+        public virtual void OnUnitFinished()
+        {
+        }
+
 
         ///<summary>
         /// Method indicates if unit is capable of moving to cell given as parameter.
@@ -479,6 +492,9 @@ namespace TbsFramework.Units
         /// Method mark units to indicate user that the unit is in range and can be attacked.
         /// </summary>
         public abstract void MarkAsReachableEnemy();
+
+        public virtual void MarkAsNotReachableEnemy() { }
+
         /// <summary>
         /// Method marks unit as currently selected, to distinguish it from other units.
         /// </summary>
@@ -486,13 +502,21 @@ namespace TbsFramework.Units
         /// <summary>
         /// Method marks unit to indicate user that he can't do anything more with it this turn.
         /// </summary>
-        public abstract void MarkAsFinished();
+        public virtual void MarkAsFinished()
+        {
+            IsFinished = true;
+
+            if (IsMoving == false)
+                OnUnitFinished();
+        }
         /// <summary>
         /// Method returns the unit to its base appearance
         /// </summary>
         public abstract void UnMark();
 
+#if UNITY_EDITOR
         [ExecuteInEditMode]
+#endif
         public void OnDestroy()
         {
             if (Cell != null)

@@ -51,6 +51,7 @@ namespace TbsFramework.Grid.GridStates
                 _cellGrid.CellGridState = new CellGridStateUnitSelected(_cellGrid, _unit);
             }
 
+            //todo: 加buff
             if (unit.PlayerNumber.Equals(_unit.PlayerNumber))
             {
                 _cellGrid.CellGridState = new CellGridStateUnitSelected(_cellGrid, unit);

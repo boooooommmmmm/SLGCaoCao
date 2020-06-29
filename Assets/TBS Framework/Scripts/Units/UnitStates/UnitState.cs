@@ -13,7 +13,10 @@
             _unit = unit;
         }
 
+        //enter state
         public abstract void Apply();
+
+        //exit state
         public abstract void MakeTransition(UnitState state);
     }
 }

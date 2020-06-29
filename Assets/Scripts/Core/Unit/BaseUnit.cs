@@ -15,8 +15,10 @@ namespace Framework.Core
         private List<MaterialPropertyBlock> m_ListMPB = new List<MaterialPropertyBlock>();
 
         private float fSetGraySpeed = 0.2f;
-        private float fSetRedSpeed = 2f;
+        private float fSetRedSpeed = 0.2f;
         private float fMaxRed = 0.5f;
+
+        private bool bIsReachableEnemy = false;
 
         public override void Initialize()
         {
@@ -53,9 +55,7 @@ namespace Framework.Core
 
         public override void MarkAsFinished()
         {
-            //set gray
-            StartCoroutine(SetGray(true));
-            AnimatorController.SetTrigger("TriggerIdle");
+            base.MarkAsFinished();
         }
 
         public override void MarkAsFriendly()
@@ -65,19 +65,61 @@ namespace Framework.Core
         public override void MarkAsReachableEnemy()
         {
             //set red
-            StartCoroutine(SetRed(true, false));
+            bIsReachableEnemy = true;
+            SetRed(true);
+        }
+
+        public override void MarkAsNotReachableEnemy()
+        {
+            base.MarkAsNotReachableEnemy();
+
+            if (bIsReachableEnemy)
+            {
+                SetRed(false);
+                bIsReachableEnemy = false;
+            }
         }
 
         public override void MarkAsSelected()
         {
-            //change animation to run            
-            AnimatorController.SetTrigger("TriggerRun");
         }
 
         public override void UnMark()
         {
-            //change animation back to idle
+        }
+
+        public override void OnUnitSelected()
+        {
+            base.OnUnitSelected();
+
+            if (IsFinished)
+                AnimatorController.SetTrigger("TriggerIdle");
+            else
+                AnimatorController.SetTrigger("TriggerRun");
+        }
+
+        public override void OnUnitDeselected()
+        {
+            base.OnUnitDeselected();
+
+            if (!IsMoving)
+                AnimatorController.SetTrigger("TriggerIdle");
+        }
+
+        public override void OnUnitFinished()
+        {
+            base.OnUnitFinished();
+
+            StartCoroutine(SetGray(true));
             AnimatorController.SetTrigger("TriggerIdle");
+        }
+
+        public override void OnTurnEnd()
+        {
+            base.OnTurnEnd();
+
+            AnimatorController.SetTrigger("TriggerIdle");
+            StartCoroutine(SetGray(false));
         }
 
         private IEnumerator SetGray(bool b)
@@ -127,7 +169,6 @@ namespace Framework.Core
             if (isYoyo)
             {
                 timeCount = 0;
-                b = !b;
                 while (timeCount < fSetRedSpeed)
                 {
                     red = b ? timeCount / fSetRedSpeed * fMaxRed : (fMaxRed - timeCount / fSetRedSpeed);
@@ -151,6 +192,15 @@ namespace Framework.Core
                 m_ListRenders[i].SetPropertyBlock(m_ListMPB[i]);
             }
 
+        }
+
+        private void SetRed(bool b)
+        {
+            for (int i = 0; i < m_ListMPB.Count; i++)
+            {
+                m_ListMPB[i].SetFloat("_Hitted", b ? fMaxRed : 0f);
+                m_ListRenders[i].SetPropertyBlock(m_ListMPB[i]);
+            }
         }
     }
 }
