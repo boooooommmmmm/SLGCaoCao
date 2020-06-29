@@ -5,8 +5,19 @@ using TbsFramework.Units;
 
 namespace Framework.Core
 {
+    [System.Serializable]
+    public class Skill_Configs
+    {
+        public string strSkillName;
+        public float fSkillFactor;//negative for heal
+        public int iSkillRange;
+    }
+
     public class BaseUnit : Unit
     {
+        [SerializeField]
+        private List<Skill_Configs> m_ListSkills;
+
         [SerializeField]
         private List<Renderer> m_ListRenders;
         [SerializeField]
