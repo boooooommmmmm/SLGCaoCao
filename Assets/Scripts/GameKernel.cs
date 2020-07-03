@@ -12,8 +12,8 @@ namespace Framework
 {
     public sealed class GameKernel : MonoBehaviour
     {
-        [SerializeField][NotNull]
-        private UIKernel uiKernel;
+        [NotNull]
+        public UIKernel UIKernel;
 
         private static GameKernel _instance;
 
@@ -36,9 +36,9 @@ namespace Framework
             }
             _instance = this;
             DontDestroyOnLoad(this);
-            
+
             //check sub kernels
-            if (uiKernel == null)
+            if (UIKernel == null)
             {
                 throw new SystemException("UI kernel not serialized!");
             }

@@ -8,5 +8,20 @@ namespace Framework
     {
         [SerializeField]
         private Canvas canvas;
+
+        public GameObject RootUI;
+        public GameObject TopUI;
+
+        [Header("Prefabs")]
+        public GameObject BattlePanel;
+
+        private void Awake()
+        {
+            DontDestroyOnLoad(this);
+        }
+
+        private void Start()
+        {
+        }
     }
 }
