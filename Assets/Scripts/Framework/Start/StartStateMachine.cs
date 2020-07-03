@@ -12,6 +12,9 @@ namespace Framework.StateMachine
             base.Enter();
             Debug.Log("Enter start state");
 
+            //push start UI
+            //GameKernel.GetInstance().UIKernel
+
             StateMachineManager.Get().SwitchToBrother("Battle");
         }
 
