@@ -13,15 +13,16 @@ namespace Framework.StateMachine
             Debug.Log("Enter start state");
 
             //push start UI
-            //GameKernel.GetInstance().UIKernel
-
-            StateMachineManager.Get().SwitchToBrother("Battle");
+            GameKernel.GetInstance().UIKernel.PushStartPanel();            
         }
 
         public override void Exit()
         {
             base.Exit();
             Debug.Log("Exit start state");
+
+            //clear start UI
+            GameKernel.GetInstance().UIKernel.PopStartPanel();
         }
     }
 }

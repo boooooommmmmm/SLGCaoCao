@@ -2,17 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Framework.Core;
 
-public class UIStartPanel : MonoBehaviour
+namespace UI.Start
 {
-    public 
-    void Start()
+    public class UIStartPanel : MonoBehaviour
     {
-        
-    }
+        public Button Button_Start;
 
-    void Update()
-    {
-        
+        void Start()
+        {
+            Button_Start.onClick.AddListener(OnClickStart);
+        }
+
+        void Update()
+        {
+
+        }
+
+        private void OnDestroy()
+        {
+            Button_Start.onClick.RemoveAllListeners();
+        }
+
+        void OnClickStart()
+        {
+            StateMachineManager.Get().SwitchToBrother("Battle");
+        }
     }
 }

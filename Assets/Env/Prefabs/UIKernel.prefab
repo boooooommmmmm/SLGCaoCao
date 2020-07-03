@@ -253,5 +253,7 @@ MonoBehaviour:
   canvas: {fileID: 7417237179233706677}
   RootUI: {fileID: 6212332161863530835}
   TopUI: {fileID: 6869102175762651152}
+  StartPanel: {fileID: 8919834074629980603, guid: ebf3277af1d0fde4b8e1d990652d799e,
+    type: 3}
   BattlePanel: {fileID: 8919834074629980603, guid: 2d43a6f2d4672e749bbdd428dd1a6556,
     type: 3}
