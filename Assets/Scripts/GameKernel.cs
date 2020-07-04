@@ -10,17 +10,10 @@ using Framework.Record;
 
 namespace Framework
 {
-    public sealed class GameKernel : MonoBehaviour
+    public sealed class GameKernel : Singleton<GameKernel>
     {
         [NotNull]
         public UIKernel UIKernel;
-
-        private static GameKernel _instance;
-
-        public static GameKernel GetInstance()
-        {
-            return _instance;
-        }
 
         public event Action<float> OnUpdate = delegate { };
         public event Action<float> OnLateUpdate = delegate { };
