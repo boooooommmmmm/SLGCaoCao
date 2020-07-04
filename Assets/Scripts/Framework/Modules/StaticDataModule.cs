@@ -32,7 +32,6 @@ namespace Framework.Data
                 {
                     string inp_ln = inp_stm.ReadLine();
                     listGalProcess.Add(inp_ln);
-                    Debug.Log(inp_ln);
                 }
                 inp_stm.Close();
             }
@@ -52,16 +51,16 @@ namespace Framework.Data
 
                 for (int i2 = 0; i2 < _tempArr.Length; i2++)
                 {
-                    _dir.Add(arrGalDataStructure[0], _tempArr[i2]);
+                    _dir.Add(arrGalDataStructure[i2], _tempArr[i2]);
                 }
 
                 listGal.Add(_dir);
             }
         }
 
-        public T GetData<T>()
+        public List<Dictionary<string, string>> GetFirstGalData()
         {
-            return null;
+            return listGal;
         }
 
         //void parseData()

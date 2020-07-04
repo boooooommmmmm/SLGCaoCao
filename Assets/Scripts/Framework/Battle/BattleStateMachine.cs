@@ -9,7 +9,7 @@ namespace Framework.StateMachine
 {
     public class BattleStateMachine : StateMachineBase
     {
-        ModuleManager moduleInstance = ModuleManager.Get();
+        ModuleManager moduleInstance = ModuleManager.GetInstance();
         int battleID = 0;
         public override void Enter()
         {

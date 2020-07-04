@@ -7,6 +7,7 @@ using Framework.Core;
 using Framework.Data;
 using Framework.StateMachine;
 using Framework.Record;
+using Gal;
 
 namespace Framework
 {
@@ -18,6 +19,8 @@ namespace Framework
         public event Action<float> OnUpdate = delegate { };
         public event Action<float> OnLateUpdate = delegate { };
         public event Action OnOnDestroy = delegate { };
+
+        public ScreenFader screenFader;
 
 
         private void Awake()
@@ -40,7 +43,7 @@ namespace Framework
         private void Start()
         {
             //load static data
-            var moduleInstance = ModuleManager.Get();
+            var moduleInstance = ModuleManager.GetInstance();
             moduleInstance.CreateModule<StaticDataModule>("StaticData");
             moduleInstance.CreateModule<RecordModule>("Record");
 

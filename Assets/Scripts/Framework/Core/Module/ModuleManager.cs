@@ -5,18 +5,11 @@ using UnityEngine;
 
 namespace Framework.Core
 {
-    public class ModuleManager
+    public class ModuleManager : Singleton<ModuleManager>
     {
-        private static ModuleManager instance = new ModuleManager();
-
-        public static ModuleManager Get()
-        {
-            return instance;
-        }
-
         private Dictionary<string, IModule> _modules;
 
-        private ModuleManager()
+        public ModuleManager()
         {
             _modules = new Dictionary<string, IModule>();
 
@@ -32,7 +25,7 @@ namespace Framework.Core
                 Shutdown();
             };
         }
-        
+
         void Shutdown()
         {
             foreach (var module in _modules.Values)

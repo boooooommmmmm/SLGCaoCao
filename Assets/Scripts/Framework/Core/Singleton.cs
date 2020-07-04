@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Framework.Core
 {
-    public class Singleton<T> : MonoBehaviour where T : Singleton<T>
+    public class Singleton<T> : MonoBehaviour where T : Singleton<T>, new()
     {
-        protected static T _instance;
+        protected static T _instance = new T();
 
         public static T GetInstance()
         {
@@ -15,7 +15,7 @@ namespace Framework.Core
 
         private void Awake()
         {
-            _instance = this as T;
+            //_instance = this as T;
         }
     }
 }
