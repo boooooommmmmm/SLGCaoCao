@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 using Framework.Core;
-using Framework.Data;
+using Game.Data;
 using UnityEditor.UIElements;
 
 namespace Gal
@@ -21,7 +21,7 @@ namespace Gal
 
         private List<Sprite> characterImgs = new List<Sprite>();
 
-        private List<Dictionary<string, string>> currentSceneGalData;
+        private Dictionary<int, Dictionary<string, string>> currentSceneGalData;
         private int iGalIndex = 0;
         private Dictionary<string, string> dirCurrentGalData;
 
@@ -29,7 +29,7 @@ namespace Gal
         {
             try
             {
-                currentSceneGalData = ModuleManager.GetInstance().GetModule<StaticDataModule>("StaticData").GetFirstGalData();
+                currentSceneGalData = ModuleManager.GetInstance().GetModule<StaticDataModule>("StaticData").GetData("Gal001");
             }
             catch
             {

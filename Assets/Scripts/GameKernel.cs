@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Framework.Core;
-using Framework.Data;
+using Game.Data;
 using Framework.StateMachine;
 using Framework.Record;
 using Gal;
