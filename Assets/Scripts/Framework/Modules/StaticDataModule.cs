@@ -37,7 +37,6 @@ namespace Game.Data
             }
             inp_stm.Close();
             parseData("Gal001", listGalProcess);
-
         }
 
         void parseData(string dataName, List<string> listRawData)
@@ -64,6 +63,8 @@ namespace Game.Data
 
                 _finalData[int.Parse(_valuePair["ID"])] = _valuePair;
             }
+
+            staticData[dataName] = _finalData;
         }
 
         public Dictionary<int, Dictionary<string, string>> GetData(string dataName)
@@ -78,12 +79,15 @@ namespace Game.Data
 
         public Record GetRecord()
         {
-            return JsonUtility.FromJson<Record>("path");
+            //return JsonUtility.FromJson<Record>("path");
+#if true
+            return new Record();
+#endif
         }
 
         public void SaveRecord()
         {
-            
+
         }
     }
 }

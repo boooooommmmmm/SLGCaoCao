@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TbsFramework.Units;
+using Game.Data;
 
 namespace Framework.Core
 {
@@ -15,6 +16,9 @@ namespace Framework.Core
 
     public class BaseUnit : Unit
     {
+        [Header("CharacterID:")]
+        public int CharacterID = 0;
+
         [SerializeField]
         private List<Skill_Configs> m_ListSkills;
 
@@ -45,6 +49,17 @@ namespace Framework.Core
                 render.SetPropertyBlock(propertyBlock);
 
                 m_ListMPB.Add(propertyBlock);
+            }
+
+            //get data from data module
+            if (CharacterID != 0)
+            {
+                CharacterData characterData = ModuleManager.GetInstance().GetModule<DataModule>("Data").GetCharacterData(CharacterID);
+                HitPoints = characterData.Hp;
+                AttackRange = characterData.AtkRange;
+                AttackFactor = characterData.Atk;
+                DefenceFactor = characterData.Def;
+                MovementPoints = characterData.Movement;
             }
 
         }

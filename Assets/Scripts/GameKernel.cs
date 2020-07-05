@@ -46,6 +46,7 @@ namespace Framework
             var moduleInstance = ModuleManager.GetInstance();
             moduleInstance.CreateModule<StaticDataModule>("StaticData");
             moduleInstance.CreateModule<RecordModule>("Record");
+            moduleInstance.CreateModule<DataModule>("Data");
 
             //init state machine
             var stateMachine = StateMachineManager.Get();

@@ -685,6 +685,9 @@ MonoBehaviour:
   MovementAnimationSpeed: 5
   actionPoints: 1
   PlayerNumber: 0
+  IsFinished: 0
+  CharacterID: 3
+  m_ListSkills: []
   m_ListRenders:
   - {fileID: 4521950086875657577}
   - {fileID: 4521950086875657579}
