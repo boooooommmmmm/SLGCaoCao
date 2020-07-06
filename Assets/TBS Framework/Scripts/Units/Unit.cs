@@ -367,6 +367,8 @@ namespace TbsFramework.Units
                 while (transform.localPosition != destination_pos)
                 {
                     transform.localPosition = Vector3.MoveTowards(transform.localPosition, destination_pos, Time.deltaTime * MovementAnimationSpeed);
+                    //TODO: add move towrads
+                    //transform.transform.rotation.SetLookRotation();
                     yield return 0;
                 }
             }
