@@ -87,7 +87,7 @@ namespace Framework.TBS.Units
             }
         }
 
-        public int HitPoints;
+        public int Hp;
         public int AttackRange;
         public int AttackFactor;
         public int DefenceFactor;
@@ -153,7 +153,7 @@ namespace Framework.TBS.Units
 
             UnitState = new UnitStateNormal(this);
 
-            TotalHitPoints = HitPoints;
+            TotalHitPoints = Hp;
             TotalMovementPoints = MovementPoints;
             TotalActionPoints = ActionPoints;
         }
@@ -296,14 +296,14 @@ namespace Framework.TBS.Units
         {
             MarkAsDefending(aggressor);
             int damageTaken = Defend(aggressor, damage);
-            HitPoints -= damageTaken;
+            Hp -= damageTaken;
             DefenceActionPerformed();
 
             if (UnitAttacked != null)
             {
                 UnitAttacked.Invoke(this, new AttackEventArgs(aggressor, this, damage));
             }
-            if (HitPoints <= 0)
+            if (Hp <= 0)
             {
                 if (UnitDestroyed != null)
                 {

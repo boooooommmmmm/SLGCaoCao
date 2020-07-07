@@ -63,7 +63,7 @@ namespace Framework.TBS.Units
             if (CharacterID != 0)
             {
                 CharacterData characterData = ModuleManager.GetInstance().GetModule<DataModule>("Data").GetCharacterData(CharacterID);
-                HitPoints = characterData.Hp;
+                Hp = characterData.Hp;
                 AttackRange = characterData.AtkRange;
                 AttackFactor = characterData.Atk;
                 DefenceFactor = characterData.Def;

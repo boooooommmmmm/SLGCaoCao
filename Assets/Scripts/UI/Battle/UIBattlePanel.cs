@@ -44,7 +44,7 @@ namespace UI.Battle
 
             OnUnitDehighlighted(sender, e);
 
-            if ((sender as Unit).HitPoints <= 0) return;
+            if ((sender as Unit).Hp <= 0) return;
 
             OnUnitHighlighted(sender, e);
         }
@@ -92,7 +92,7 @@ namespace UI.Battle
             var defence = (sender as Unit).DefenceFactor;
             var range = (sender as Unit).AttackRange;
 
-            float hpScale = (float)((float)(sender as Unit).HitPoints / (float)(sender as Unit).TotalHitPoints);
+            float hpScale = (float)((float)(sender as Unit).Hp / (float)(sender as Unit).TotalHitPoints);
 
             Image fullHpBar = Instantiate(FullHPBar);
             Image emptyHpBar = Instantiate(EmptyHPBar);
