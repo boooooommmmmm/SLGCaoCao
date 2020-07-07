@@ -1,53 +1,20 @@
-﻿using System;
-using System.Collections;
+﻿using Framework.TBS.Cells;
+using Framework.TBS.Units;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Framework.TBS;
-using Framework.TBS.Cells;
-using Framework.TBS.Units;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 using UnityEngine;
-
 
 namespace Framework.TBS.Grid.UnitGenerators
 {
-    public class GridGenerator : MonoBehaviour, IUnitGenerator
+    public class CustomUnitGenerator : MonoBehaviour, IUnitGenerator
     {
-        public GameObject CellPrefab;
         public Transform UnitsParent;
         public Transform CellsParent;
 
-        public Vector2 V2CellSize = new Vector2(3, 3);
-
         /// <summary>
-        /// Snaps unit objects to the nearest cell.
+        /// Returns units that are already children of UnitsParent object.
         /// </summary>
-        public void GenerateGrid()
-        {
-            //clear chid 
-            foreach (Transform t in CellsParent)
-            {
-                Destroy(t.gameObject);
-            }
-
-            for (int i = 0; i < V2CellSize.x; i++)
-            {
-                for (int j = 0; j < V2CellSize.y; j++)
-                {
-                    GameObject _go = PrefabUtility.InstantiatePrefab(CellPrefab, CellsParent) as GameObject;
-                    _go.transform.localPosition = new Vector3(i, 0, j);
-                    _go.transform.localRotation = Quaternion.identity;
-                }
-            }
-        }
-
-        public void SnapToGrid()
-        {
-
-        }
-
         public List<Unit> SpawnUnits(List<Cell> cells)
         {
             List<Unit> ret = new List<Unit>();
@@ -76,6 +43,29 @@ namespace Framework.TBS.Grid.UnitGenerators
 
             }
             return ret;
+        }
+
+        /// <summary>
+        /// Snaps unit objects to the nearest cell.
+        /// </summary>
+        public void SnapToGrid()
+        {
+            List<Transform> cells = new List<Transform>();
+
+            foreach (Transform cell in CellsParent)
+            {
+                cells.Add(cell);
+            }
+
+            foreach (Transform unit in UnitsParent)
+            {
+                var closestCell = cells.OrderBy(h => Math.Abs((h.transform.position - unit.transform.position).magnitude)).First();
+                if (!closestCell.GetComponent<Cell>().IsTaken)
+                {
+                    Vector3 offset = new Vector3(0, closestCell.GetComponent<Cell>().GetCellDimensions().y, 0);
+                    unit.localPosition = closestCell.transform.localPosition + offset;
+                }//Unit gets snapped to the nearest cell
+            }
         }
     }
 }

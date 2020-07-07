@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TbsFramework.Units;
+using Framework.TBS;
 using Game.Data;
+using Framework.Core;
 
-namespace Framework.Core
+namespace Framework.TBS.Units
 {
     [System.Serializable]
     public class Skill_Configs
@@ -16,8 +17,16 @@ namespace Framework.Core
 
     public class BaseUnit : Unit
     {
-        [Header("CharacterID:")]
+        [Header("CharacterID")]
         public int CharacterID = 0;
+
+        public int Mp = 0;
+
+        public int Force = 0;
+        public int Intelligence = 0;
+        public int Command = 0;
+        public int Agility = 0;
+        public int Luck = 0;
 
         [SerializeField]
         private List<Skill_Configs> m_ListSkills;
@@ -38,7 +47,6 @@ namespace Framework.Core
         public override void Initialize()
         {
             base.Initialize();
-            transform.localPosition -= new Vector3(0, 0, 1);//terrian has height
 
             //init MaterialPropertyBlock
             foreach (Renderer render in m_ListRenders)
@@ -60,9 +68,16 @@ namespace Framework.Core
                 AttackFactor = characterData.Atk;
                 DefenceFactor = characterData.Def;
                 MovementPoints = characterData.Movement;
-            }
 
+                Mp = characterData.Mp;
+                Force = characterData.Force;
+                Intelligence = characterData.Intelligence;
+                Command = characterData.Command;
+                Agility = characterData.Agility;
+                Luck = characterData.Luck;
+            }
         }
+
         public override void MarkAsAttacking(Unit other)
         {
             AnimatorController.SetTrigger("TriggerAttack");

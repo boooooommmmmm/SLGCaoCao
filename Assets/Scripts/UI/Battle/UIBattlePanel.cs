@@ -1,7 +1,7 @@
-﻿using System;
-using TbsFramework.Grid;
-using TbsFramework.Players;
-using TbsFramework.Units;
+﻿using Framework.TBS.Grid;
+using Framework.TBS.Players;
+using Framework.TBS.Units;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;

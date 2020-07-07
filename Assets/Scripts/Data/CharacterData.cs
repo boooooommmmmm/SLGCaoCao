@@ -18,6 +18,12 @@ namespace Game.Data
         public int AtkRange;
         public int Movement;
 
+        public int Command = 0;
+        public int Intelligence = 0;
+        public int Force = 0;
+        public int Agility = 0;
+        public int Luck = 0;
+
 
         public CharacterData(CharacterRecord cr)
         {
@@ -27,15 +33,15 @@ namespace Game.Data
 
             Dictionary<string, string> staticData = ModuleManager.GetInstance().GetModule<StaticDataModule>("StaticData").GetDataByIndex("Character", CharacterID);
 
-            float _CommandAttrPower = 5 - GameUtility._converAttrToInt(staticData["CommandAttr"]);
-            float _IntelligenceAttrPower = (5 - GameUtility._converAttrToInt(staticData["IntelligenceAttr"])) / 2;
-            float _ForceAttrPower = 5 - GameUtility._converAttrToInt(staticData["ForceAttr"]);
-            float _AgilityAttrPower = (5 - GameUtility._converAttrToInt(staticData["AgilityAttr"])) / 2;
+            Command = (5 - GameUtility._converAttrToInt(staticData["CommandAttr"])) * Level;
+            Intelligence = (5 - GameUtility._converAttrToInt(staticData["IntelligenceAttr"])) * Level * 2;
+            Force = (5 - GameUtility._converAttrToInt(staticData["ForceAttr"])) * Level / 2;
+            Agility = (5 - GameUtility._converAttrToInt(staticData["AgilityAttr"])) * Level / 2;
 
-            Hp = Mathf.FloorToInt(_CommandAttrPower * Level) + 100;
-            Mp = Mathf.FloorToInt(_IntelligenceAttrPower * Level) + 20;
-            Atk = Mathf.FloorToInt(_ForceAttrPower * Level) + 10;
-            Def = Mathf.FloorToInt(_AgilityAttrPower * Level) + 0;
+            Hp = Mathf.FloorToInt(Command * 3) + 100;
+            Mp = Mathf.FloorToInt(Intelligence * 2) + 20;
+            Atk = Mathf.FloorToInt(Force * Level) + 10;
+            Def = Mathf.FloorToInt(Agility * Level) + 0;
 
             switch (staticData["Corps"])
             {
